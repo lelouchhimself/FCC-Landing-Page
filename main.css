@@ -1,0 +1,271 @@
+@import url("https://use.typekit.net/qhr8oty.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: transparent url("Assets/luke-chesser-IGtutkXikuc-unsplash.png") 0%
+    0% no-repeat padding-box;
+  background-size: 100% 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "hero-left hero-right"
+    "killua-side hisoka-side"
+    "video video"
+    "contact contact";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr auto;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 202px;
+  justify-items: center;
+  row-gap: 200px;
+}
+
+/* --- Navigation Bar --- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo {
+  width: 302.36px;
+  height: 80px;
+  margin-left: 140px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+li {
+  font-size: 16px;
+  font-family: montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  margin-right: 115px;
+}
+
+/* --- Hero Section / Home --- */
+
+h1 {
+  font-family: Acumin Pro;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 45px;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+  font-size: 16px;
+  width: 459px;
+  height: 300px;
+}
+
+.grid-element1 {
+  grid-area: hero-left;
+  align-self: start;
+  margin-top: 100px;
+}
+
+.grid-element3 {
+  grid-area: hero-left;
+  align-self: end;
+}
+.grid-element2 {
+  grid-area: hero-right;
+  justify-self: end;
+}
+
+.grid-element2 .hero-pic {
+  width: 500px;
+  height: 500px;
+}
+
+#purchase {
+  width: 160px;
+  height: 47px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  border-color: #1789fc;
+  font: normal normal bold 16px/19px Courier;
+}
+
+/* --- Product Page Section --- */
+
+.grid-element4 {
+  grid-area: killua-side;
+}
+
+.grid-element5 {
+  grid-area: hisoka-side;
+}
+
+#product-img {
+  width: 398px;
+  height: 398px;
+  border: 2px solid #1789fc;
+}
+
+/* --- Video Section --- */
+
+.intro-vid {
+  grid-area: video;
+  align-self: start;
+  width: 1000px;
+  height: 500px;
+}
+
+/* --- contact form --- */
+
+form {
+  width: 1068px;
+  height: 635px;
+  margin-bottom: 100px;
+  grid-area: contact;
+  border: 1px solid var(--unnamed-color-000000);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #000000;
+  display: grid;
+  grid-template-areas: "contact-left contact-right";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+form label {
+  font: normal normal normal Courier;
+  font-size: 15px;
+}
+
+form input {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-color: black;
+  border-bottom: 1px solid;
+  width: 100%;
+  margin-top: 64.5px;
+  margin-bottom: 21.5px;
+}
+
+.form-container {
+  grid-area: contact-left;
+  margin-left: 76px;
+  margin-top: 61px;
+  width: 427px;
+  height: 327px;
+}
+
+.contact-text {
+  font: normal normal bold 32px/44px Acumin Pro;
+  color: #1789fc;
+}
+
+.line {
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+  border-color: black;
+  border-top: 3px solid #ff0000;
+  width: 117px;
+  margin-top: -40px;
+  margin-bottom: 65.5px;
+}
+
+#submit {
+  width: 185px;
+  height: 51px;
+  font: normal normal normal 25px/30px Courier;
+  color: #ffffff;
+  border: 1px solid #1789fc;
+  border-radius: 2px;
+  background: #1789fc 0% 0% no-repeat padding-box;
+  margin-top: 15px;
+}
+
+#killua-head {
+  grid-area: contact-right;
+  width: 313px;
+  height: 313px;
+  margin-top: 175px;
+  margin-right: 85px;
+  justify-self: end;
+}
+
+div {
+  scroll-margin-top: 150px;
+}
+
+/* --- Hover Effects --- */
+nav a:hover {
+  color: #1789fca6;
+}
+
+#purchase:hover {
+  background-color: #1789fc;
+  color: white;
+  border-style: none;
+}
+
+#submit:hover {
+  background-color: #1789fca6;
+}
+
+/* <--- Media Queries ---> */
+
+/* --- Phone Screens --- */
+
+@media screen and (max-width: 767px) {
+  /*
+	.container {
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-top: 202px;
+		justify-items: center;
+		row-gap: 200px;
+	  }
+	  */
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "hero-left"
+      "hero-right"
+      "killua-side"
+      "hisoka-side"
+      "video"
+      "contact";
+
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-items: center;
+    row-gap: 200px;
+  }
+}
