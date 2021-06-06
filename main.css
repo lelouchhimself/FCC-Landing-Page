@@ -222,6 +222,10 @@ div {
   scroll-margin-top: 150px;
 }
 
+#hero-pic {
+  scroll-margin-top: 300px;
+}
+
 /* --- Hover Effects --- */
 nav a:hover {
   color: #1789fca6;
