@@ -237,6 +237,11 @@ nav a:hover {
   background-color: #1789fca6;
 }
 
+
+::placeholder {
+  visibility: hidden;
+}
+
 /* <--- Media Queries ---> */
 
 /* --- Phone Screens --- */
